@@ -12,27 +12,6 @@ node_modules/
 __pycache__/
 .pytest_cache/
 .vscode/
-# Other class or irrelevant folders.
-Comm 1116/
-Comp 1100/
-Comp 1712/
-Comp 1800/
-Comp 1537/Examples
-Comp 1510/lecture activity
-Comp 1510/pytest-demo
-node_modules/
-.venv/
-.idea/
-__pycache__/
-.pytest_cache/
-.vscode/
-css-layouts/
-
-#Assignment files
-*.pdf
-*.docx
-*.pages
-
 
 #Assignment files
 *.pdf

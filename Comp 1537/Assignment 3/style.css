@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(17, 2, 2);
+    color: white;
+}
+footer {
+    background-color: black;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color:#b0a495;
+}
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px minmax(350px, 45vh) 200px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.nav-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link img {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
+.logo {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+#main {
+    background-image: url(./broadway_01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 1.5rem;
+}
+
+#main h1 {
+    color:#ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    background: transparent;
+    text-shadow: 0 2px 8px rgba(233, 0, 0, 0.9);
+}
+#second {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 5% 1fr;
+    height: 100%;
+    align-items: center;
+    place-items: center;
+    overflow: hidden;
+    gap: 0.75rem;
+    padding-right: 5px;
+}
+
+#second p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #f7e9d5;
+}
+
+.portraits {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: none;
+}
+.portraits img {
+    height: 99%;
+}
+.divider {
+    width: 3px;
+    height: 80%;
+    background-color: #f7e9d5;
+    border:none;
+}
+
+#third {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: rgb(225, 225, 225); 
+    color: black;
+}
+#third figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5rem auto 0 auto;
+    gap: 1.5rem;
+    width: 100%;
+}
+#third figure p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+#third figure figcaption {
+    font-size: 1rem;
+    color: #666;
+    margin-top: -0.5rem;
+}
+
+.play_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0.8rem 1.8rem;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    order: 1;
+    display: inline-flex;
+}
+
+.left_box {
+    padding-left: 2%;
+}
+.heading {
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+.heading-link {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+.cards {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 80% 10%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    border-top: 1px solid grey;
+    padding-bottom: 8%;
+}
+.sigil {
+    --sigil-img: url('80px-Disengaging_Sigil.png');
+    background-color: #b0a495;
+    -webkit-mask-image: var(--sigil-img);
+    mask-image: var(--sigil-img);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+.sigil--disengaging {--sigil-img: url('80px-Disengaging_Sigil.png')}
+.sigil--shining {--sigil-img: url('80px-Shining_Wonder.png')}
+.sigil--entangling {--sigil-img:url('80px-Entangling_Bola.png')}
+
+
+@media (min-width:1281px) and (max-width:1600px) {
+    #main h1 {
+        font-size: 3rem;
+    }
+}
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        grid-template-rows: 50px minmax(300px, 40vh) auto auto;
+        height: auto;
+    }
+
+    #main h1 {
+        font-size: 2.5rem;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: auto;
+        overflow: visible;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .portraits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        gap: 1rem;
+    }
+
+    .portraits img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    #second p {
+        width: 90%;
+        max-width: 750px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #third {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 2rem 1.5rem;
+        gap: 2.5rem;
+    }
+    .left_box {
+        padding-left: 0;
+    }
+    .cards {
+        grid-template-rows: auto;
+    }
+    .right_box figure {
+        align-items: center;
+        text-align: center;
+    }
+
+    .play_button {
+        align-self: center;
+    }
+}
+
+ @media (max-width: 1024px) {
+    .container {
+        grid-template-rows: auto minmax(220px, 35vh) auto auto auto;
+        height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.75rem 0;
+    }
+
+    #main h1 {
+        font-size: 1.85rem;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        align-items: center;
+        gap: 0;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .logo {
+        order: -1;
+    }
+    #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: auto;
+        overflow: visible;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .portraits {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    #second p {
+        width: 95%;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #third {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 2rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .left_box {
+        padding-left: 0;
+    }
+
+    .cards {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr auto;
+        gap: 15px;
+    }
+
+    .sigil {
+        width: 55px;
+        height: 55px;
+    }
+
+    .right_box figure {
+        align-items: center;
+        text-align: center;
+    }
+
+    .play_button {
+        align-self: center;
+        margin-top: 1.5rem;
+    }
+    .heading-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+    }
+    .heading-row .heading {
+        align-self: flex-start;
+        padding-bottom: 0;
+    }
+    .heading-row .heading-link {
+        align-self: flex-end;
+    }
+}

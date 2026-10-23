@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Xander Eksteen Resume</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1>Xander Eksteen</h1>
+        </header> <hr>
+        <nav><h2>Navigation</h2>
+            <ul>
+                <li><a href="#technical_skills">Technical Skills</a></li>
+                <li><a href="#education_history">Education History</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <a href="https://dummyimage.com">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="Dummy image">
+            </a>
+            <figcaption>Placeholder image linking to dummyimage.com</figcaption>
+        </figure>
+        <br>
+        <aside>
+        <small>https://github.com/examplesmallusername</small>
+        </aside>
+        <br>
+        <article>
+            <h2>Hobbies</h2>
+            <p>
+                Outside of classes, I enjoy PC building (4070, 32gb DDR5), video games (Baldurs Gate 3, KCD, Deadlock), Music, and collecting vinyl records.
+            </p>
+        </article>
+
+        <br><br><br><br><br><br>
+        <section>
+            <h2>Education</h2>
+            <h3>Technical Skills</h3>
+            <ul id="technical_skills">
+                <li>HTML5 &amp; CSS</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+            <h3>Education history</h3>
+            <ol id="education_history">
+                <li>High School Diploma</li>
+                <li>Computer Systems Technology Diploma <b>(In progress)</b> - <span>Term 1</span></li>
+            </ol>
+            <p>
+                For <i>extra</i> information about <abbr title="British Columbia Institute of Technology">BCIT</abbr> go
+                <a href="https://www.bcit.ca/">here</a>
+            </p>
+        </section>
+        <h3>Current Courses</h3>
+        <table>
+            <caption>Current courses</caption>
+            <thead>
+                <tr>
+                    <th>Course name</th>
+                    <th>Course number</th>
+                    <th>Course credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web development</td>
+                    <td>Comp 1537</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>Applied mathematics</td>
+                    <td>Comp 1113</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>Programming methods</td>
+                    <td>Comp 1510</td>
+                    <td>4.0</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3>Abbreviation lookup:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading style sheets</dd>
+        </dl>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>user profile</legend>
+
+                <label for="username">Login name:</label>
+                <input type="text" id="username" name="username" placeholder="Username" pattern="[A-Za-z]{8,20}" required>
+                <br><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" autocomplete="current-password" placeholder="Password" pattern="[A-Z0-9a-z]{10,20}" required>
+                <br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="65" placeholder="18">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <footer>
+            <hr>
+            &copy; Copyright 2026. All rights reserved.
+        </footer>
+    </body>
+</html>

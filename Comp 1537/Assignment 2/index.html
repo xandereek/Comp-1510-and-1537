@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 2 - Xander</title>
+        <meta charset="utf-8">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: beige;
+            }
+            .favorite {
+                color: darkred;
+            }
+            #list_of_hobbies {
+                font-size: 15pt;
+            }
+            #content > p {
+                line-height: 1.5;
+            }
+            a[href^="#"] {
+                background-color: lightblue;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid #333;
+                padding: 8px 12px;
+                text-align: left;
+            }
+
+            th {
+                background: #e8e4d0;
+            }
+
+            thead tr:first-child th {
+                text-align: center;
+                font-size: 1.1em;
+            }
+            tbody tr:nth-child(odd) {
+                background-color: white;
+            }
+            a:link {
+                color: navy;
+            }
+            a:visited {
+                color: purple;
+            }
+            a:hover {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My hobbies</h1>
+            <hr>
+        </header>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#list_of_hobbies">List of hobbies</a></li>
+                <li><a href="#best_video_games">Favorite video games</a></li>
+                <li><a href="#vinyl_collection">Vinyl collection</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div id="content">
+            <p>
+                This webpage contains a <span>list of my hobbies, favorite video games </span>
+                (mainly <abbr title="Role-Playing Games">RPGs</abbr>), and information about my Vinyl collection
+                including a list of <i>some</i> albums I <b>recently</b> have either been looking for or bought.
+            </p>
+            <h2>List of hobbies</h2>
+            <ul id="list_of_hobbies">
+                <li>Video games</li>
+                <li>Rating music</li>
+                <li>Collecting Vinyl Records</li>
+            </ul>
+            <h2>Favorite video games</h2>
+            <ol id="best_video_games">
+                <li class="favorite">Baldur's Gate 3</li>
+                <li>Cyberpunk 2077</li>
+                <li>Kingdom Come: Deliverance</li>
+            </ol>
+            <img src="https://dummyimage.com/500x200/000/fff" alt="500x200 dummy image">
+            <br>
+            <table id="vinyl_collection">
+                <thead>
+                    <tr>
+                        <th colspan="3">Vinyl collection</th>
+                    </tr>
+                    <tr>
+                        <th>Album</th>
+                        <th>Artist</th>
+                        <th>Owned status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="favorite">
+                        <td>In Rainbows</td>
+                        <td>Radiohead</td>
+                        <td>Owned</td>
+                    </tr>
+                    <tr>
+                        <td>Rumours</td>
+                        <td>Fleetwood Mac</td>
+                        <td>Owned</td>
+                    </tr>
+                    <tr>
+                        <td>Ziggy Stardust</td>
+                        <td>David Bowie</td>
+                        <td>Looking for</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <hr>
+            &copy; Copyright 2026. Xander Eksteen All rights reserved.
+        </footer>
+    </body>
+</html>

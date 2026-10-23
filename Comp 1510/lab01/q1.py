@@ -1,0 +1,5 @@
+print("Xander Eksteen")
+print("I have no mouth and I must scream by Harlan Ellison")
+print("Orchid")
+print("English, and Afrikaans")
+print("Get outside more")
